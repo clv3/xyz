@@ -1,0 +1,11 @@
+.sizeIt {
+    display: flex;
+    flex-direction: column;
+}
+
+.formatIt {
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+}

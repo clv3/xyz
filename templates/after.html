@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="box">
+            <!-- <div class="card-image">
+                <figure class="image is-128x128">
+                    <img src="http://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/24/24014.jpg" alt="A LoL Splashart">
+                </figure>
+            </div> -->
+            <div class="box">
+        <h1 class="title has-text-centered">Prediction results:</h1>
+    </div>
+    <div class="box">
+        {%if data == 0%}
+        <h2 class="subtitle has-text-centered">You would lose!</h2>
+        <h2 class="subtitle has-text-centered">Unfortunately, your team would lose based on the inputs you provided.</h2>{data.format()}
+        {%else %}
+        <h2 class="subtitle has-text-centered">You would win!</h2>
+        <h2 class="subtitle has-text-centered">Congratulations, your team would win based on the inputs you provided!</h2>
+        {%endif%}
+        </div>
+        <br><br>
+        <a href='/' class="button is-success is-large is-fullwidth is-italic">Want to try again?</a>
+    </div>
+    </div>
+    </body>
+</html>
